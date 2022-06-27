@@ -1,0 +1,22 @@
+<script type="module" >
+import { bg, show } from "https://js.sabae.cc/egadv.js";
+await bg(66);
+for(;;){
+   let a = await show("やせいの馬があらわれた。",["たたかう","にげる"])
+   if (a == "たたかう"){
+      let a = await show("たたかう",["たいあたり","なきごえ"])
+      if(a == "たいあたり"){
+         await show("やせいの馬をたおした");
+         break;
+      }
+      if(a == "なきごえ"){
+          await show("こうかがないようだ")
+      }
+   }
+   if (a == "にげる"){
+      await show("にげられない")
+   }
+}
+await show("経験値を１入手した")
+
+</script>
